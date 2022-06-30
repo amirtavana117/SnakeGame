@@ -39,3 +39,4 @@ class Snake:
     def down(self):
         if self.segments[0].heading() != 90:
             self.head.setheading(270)
+       
