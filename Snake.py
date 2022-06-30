@@ -1,5 +1,5 @@
 from turtle import Turtle
-POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
+POSITIONS = [(0, 0), (-20, 0), (-40, 0), (-60, 0), (-80, 0)]
 MOVE_SPEED = 20
 
 
