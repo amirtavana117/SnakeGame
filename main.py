@@ -38,5 +38,12 @@ while Game_Is_on:
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         Game_Is_on = False
         score_board.game_over()
+    for seg in snake.segments:
+        if seg == snake.head:
+            pass
+
+        elif snake.head.distance(seg) < 10:
+            Game_Is_on = False
+            score_board.game_over()
 
 screen.exitonclick()
