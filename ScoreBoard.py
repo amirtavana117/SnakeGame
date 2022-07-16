@@ -14,12 +14,15 @@ class ScoreBoard(Turtle):
         self.update_scoreboard()
 
     def update_scoreboard(self):
-        self.write(f"score: {self.score}", align="center",
+        self.clear()
+        self.write(f"score: {self.score} , high score : {self.highscore}", align="center",
                    font=("Arial", 24, "normal"))
 
     def reset(self):
         if self.score > self.highscore:
             self.highscore = self.score
+        self.score = 0
+        self.update_scoreboard()
 
     def inceraseScore(self):
         self.clear()
