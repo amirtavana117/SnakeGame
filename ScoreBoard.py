@@ -18,7 +18,7 @@ class ScoreBoard(Turtle):
         self.write(f"score: {self.score} , high score : {self.highscore}", align="center",
                    font=("Arial", 24, "normal"))
 
-    def reset(self):
+    def reset_scoreBoard(self):
         if self.score > self.highscore:
             self.highscore = self.score
         self.score = 0
